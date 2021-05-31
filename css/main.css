@@ -1,0 +1,9 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}  
+
+h1, h2, h3 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 300;
+}
