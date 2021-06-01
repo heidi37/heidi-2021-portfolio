@@ -46,29 +46,39 @@ a:hover{
     text-decoration: underline;
 }
 
+/****** ICON SIZING ******/
 
+h2 + img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+#about-image img {
+    width: 150px;
+}
 
 /****** NAV STYLES ******/
 
 nav ul {
-    list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    height: 60px;
+    list-style-type: none;
+    height: 65px;
     margin: 0;
     padding-right: 25px;
+    background: hsla(0, 0%, 0%, 0.353);
 }
 
 nav ul li {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
     font-family: 'Zilla Slab', serif;
     font-weight: 300;
     font-style: italic;
     font-size: 1.5rem;
-    display: flex;
     text-align: right;
     padding-left: 40px;
-    flex-direction: column-reverse;
-    justify-content: center;
 }
 
 nav ul li a {
@@ -79,19 +89,17 @@ nav ul li a {
 /****** HEADER STYLES ******/
 
 header {
-    background: url('../img/header-fish-hero-image.png') no-repeat center bottom;
-    height: 768px;
     display: flex;
     flex-direction: column;
+    background: url('../img/header-fish-hero-image.png') no-repeat center bottom;
+    height: 768px;
 }
 
 header div {
-    background: hsla(42, 60%, 69%, 0.053);
-    height: 100%;
-    margin-top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    height: 100%;
+    margin-top: 0;
 }
 
 #header-text-box {
@@ -109,14 +117,13 @@ header div {
     font-family: 'Zilla Slab', serif;
     font-weight: 300;
     font-style: italic;
-    margin: 0 0 30px;
     font-size: 1.75rem;
+    margin: 0 0 30px;
 }
 
 /****** PORTFOLIO STYLES ******/
 
 #portfolio {
-    /* width: 100%; */
     padding: 0 137px;
     display: flex;
     flex-direction: column;
@@ -132,7 +139,7 @@ header div {
 
 .portfolio-item {
     display: flex;
-    margin-bottom: 100px;;
+    margin-bottom: 100px;
 }
 
 .portfolio-image {
@@ -147,19 +154,20 @@ header div {
 }
 
 .button {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500;
+    font-size: 1.5em;
     background: #332B1E;
     color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
-    font-family: 'Zilla Slab', serif;
-    font-weight: 500;
-    font-size: 1.5em;
 }
 
 .button:hover {
     color: white;
     background-color: #AA1E23;
     text-decoration: none;
+    transition: background-color .5s;
 }
 
 /****** ABOUT STYLES ******/
@@ -169,9 +177,8 @@ header div {
     height: 768px;
 }
 
-.about-item {
+#about-item {
     display: flex;
-    justify-content: flex-start;
     margin: 0px 137px;
 }
 
@@ -179,7 +186,6 @@ header div {
     display: flex;
     justify-content: flex-end;
     flex-basis: 525px;
-    margin: right: 43px;
 }
 
 #about-portfolio-image img {
@@ -187,7 +193,7 @@ header div {
     height: 302px;
 }
 
-.about-description {
+#about-description {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -195,31 +201,31 @@ header div {
     margin-left: 43px;
 }
 
-.about-description h3 {
+#about-description h3 {
     color: #E7E9E8;
     margin: 0;
 }
 
-.about-description h4 {
+#about-description h4 {
     color: #332B1E;
 }
 
-.about-description p:first-of-type {
+#about-description p:first-of-type {
     border-top: 1px solid #DFC280;
     padding-top: 10px;
     display: flex;
 }
 
-.about-description p {
+#about-description p {
     color: #E7E9E8;
 }
 
 /****** FOOTER/CONTACT STYLES ******/
 
 #contact {
-    background: #332B1E;
     display: flex;
     flex-direction: column;
+    background: #332B1E;
 }
 
 #contact h2, #contact p, #contact p a {
@@ -236,19 +242,20 @@ header div {
     color: #AA1E23;
 }
 
-.contact-description {
+#contact-description {
     display: flex;
     flex-direction: column;
 }
 
 #social-icons {
     display: flex;
-    margin: 10px 525px 50px;
     justify-content: space-between;
+    margin: 10px 550px 50px;
+    text-align: center;
 }
 
 #social-icons img {
-    width: 70%;
+    width: 50px;
 }
 
 #copyright, #icon-attribution, #icon-attribution a {
