@@ -243,18 +243,12 @@ header div {
 
 #social-icons {
     display: flex;
-    margin: 100px 450px 50px;
+    margin: 10px 525px 50px;
     justify-content: space-between;
-    transition: width 2s;
 }
 
-#social-icons img{
-    width: 100%;
-    transition: width .2s;
-}
-
-#social-icons img:hover {
-    width: 95%
+#social-icons img {
+    width: 70%;
 }
 
 #copyright, #icon-attribution, #icon-attribution a {
