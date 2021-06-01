@@ -1,9 +1,159 @@
+/****** BASE STYLES ******/
+
+html {
+    font-size: 16px;
+    background: #E7E9E8;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    color: #332B1E;
+    width: 1366px;
+    margin: 0 auto;
+    line-height: 1.6875em;
 }  
 
 h1, h2, h3 {
     font-family: 'Zilla Slab', serif;
     font-weight: 300;
 }
+
+h1 {
+    font-size: 3em;
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-style: italic;
+    text-align: center;
+    margin: 80px 0;
+}
+
+h3 {
+    font-size: 2em;
+    color: #AA1E23;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+/****** NAV STYLES ******/
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    margin: 0;
+    padding-right: 25px;
+}
+
+nav ul li {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.5rem;
+    display: flex;
+    text-align: right;
+    padding-left: 40px;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E7E9E8
+}
+
+/****** HEADER STYLES ******/
+
+header {
+    background: url('../img/header-fish-hero-image.png') no-repeat center bottom;
+    height: 768px;
+    display: flex;
+    flex-direction: column;
+}
+
+header div {
+    background: hsla(42, 60%, 69%, 0.053);
+    height: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#header-text-box {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+#heidi {
+    color: #AA1E23;
+    font-weight: 500;
+}
+
+#tagline {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0 0 30px;
+    font-size: 1.75rem;
+}
+
+/****** PORTFOLIO STYLES ******/
+
+#portfolio {
+    /* width: 100%; */
+    padding: 0 137px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 100px 0;
+}
+
+.portfolio-item {
+    display: flex;
+    margin-bottom: 100px;;
+}
+
+.portfolio-image {
+    width: 525px;
+    margin-right: 43px;
+}
+
+.portfolio-description p {
+    border-top: 1px solid #E7E9E8;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.button {
+    background: #332B1E;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+/****** ABOUT STYLES ******/
+
+#about {
+    background: #7F7460;
+}
+
+/****** FOOTER/CONTACT STYLES ******/
