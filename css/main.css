@@ -9,10 +9,11 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #332B1E;
-    width: 1366px;
-    margin: 0 auto;
-    line-height: 1.6875em;
-}  
+} 
+
+ul {
+    padding: 0;
+}
 
 h1, h2, h3 {
     font-family: 'Zilla Slab', serif;
@@ -20,15 +21,15 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3em;
-    margin: 30px 0;
+    font-size: 2em;
+    text-align: right;
 }
 
 h2 {
     font-size: 2.5em;
     font-style: italic;
     text-align: center;
-    margin: 80px 0;
+    margin: 60px 0 30px;
 }
 
 h3 {
@@ -49,24 +50,30 @@ a:hover{
 /****** ICON SIZING ******/
 
 h2 + img {
-    width: 100px;
+    width: 75px;
     margin-right: 10px;
 }
 
 #about-image img {
-    width: 150px;
+    width: 100px;
 }
+
+p {
+    line-height: 1.6;
+}
+
+
 
 /****** NAV STYLES ******/
 
+
 nav ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     list-style-type: none;
     height: 65px;
     margin: 0;
-    padding-right: 25px;
-    background: hsla(0, 0%, 0%, 0.353);
+    background:#332B1E;
 }
 
 nav ul li {
@@ -78,11 +85,10 @@ nav ul li {
     font-style: italic;
     font-size: 1.5rem;
     text-align: right;
-    padding-left: 40px;
 }
 
-nav ul li:nth-of-type(3) {
-    padding-right: 20px;
+nav ul li:nth-of-type(2) {
+    padding: 0 40px;
 }
 
 nav ul li a {
@@ -95,8 +101,9 @@ nav ul li a {
 header {
     display: flex;
     flex-direction: column;
-    background: url('../img/header-fish-hero-image.png') no-repeat center bottom;
-    height: 768px;
+    background: url('../img/header-fish-hero-image@2x.jpg') no-repeat right top;
+    background-size: cover;
+    height: 812px;
 }
 
 header div {
@@ -108,13 +115,25 @@ header div {
 
 #header-text-box {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     text-align: center;
+    height: 725px;
+}
+
+#header-text-box h1 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px 0 120px;
+    padding: 20px 20px 20px 0;
+    background-image: linear-gradient(to right, rgba(170,30,35,0), rgba(0,0,0,.7));
+    color: #E7E9E8;
 }
 
 #heidi {
-    color: #AA1E23;
+    color: #aa1e23;
     font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
 #tagline {
@@ -128,7 +147,7 @@ header div {
 /****** PORTFOLIO STYLES ******/
 
 #portfolio {
-    padding: 0 137px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     background: white;
@@ -138,17 +157,22 @@ header div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 0 100px 0;
+    margin: 0 0 50px 0;
 }
 
 .portfolio-item {
     display: flex;
-    margin-bottom: 100px;
+    flex-direction: column;
+    margin-bottom: 80px;
 }
 
-.portfolio-image {
-    width: 525px;
-    margin-right: 43px;
+.portfolio-image img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-description {
+    padding: 0 15px;
 }
 
 .portfolio-description p {
@@ -178,40 +202,39 @@ header div {
 
 #about {
     background: #7F7460;
-    height: 768px;
+    height: 812px;
 }
 
 #about-item {
     display: flex;
-    margin: 0px 137px;
+    flex-direction: column;
+    padding: 0 15px;
+    margin: 0;
 }
 
 #about-portfolio-image {
     display: flex;
-    justify-content: flex-end;
-    flex-basis: 525px;
+    justify-content: center;
 }
 
 #about-portfolio-image img {
-    width: 302px;
-    height: 302px;
+    width: 200px;
+    height: 200px;
 }
 
 #about-description {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    flex-basis: 350px;
-    margin-left: 43px;
 }
 
 #about-description h3 {
     color: #E7E9E8;
-    margin: 0;
+    margin: 30px 0 0 0;
+    
 }
 
-#about-description h4 {
-    color: #332B1E;
+#about-description h3, #about-description h4, #about-description p {
+    text-align: center;
 }
 
 #about-description p:first-of-type {
@@ -253,17 +276,149 @@ header div {
 
 #social-icons {
     display: flex;
-    justify-content: space-between;
-    margin: 10px 550px 50px;
+    justify-content: center;
+    margin: 0;
     text-align: center;
 }
 
 #social-icons img {
     width: 50px;
+    padding: 0 10px;
 }
 
 #copyright, #icon-attribution, #icon-attribution a {
     font-size: .6rem;
     text-align: center;
     color: #E7E9E8;
+    margin-top: 60px;
+}
+
+#icon-attribution, #icon-attribution a {
+    margin-bottom: 10px;
+}
+
+
+/****** MEDIA QUERIES ******/
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3em;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    #heidi {
+        margin: 0;
+    }
+
+    header {
+        background: url('../img/header-fish-hero-image@2x.jpg') no-repeat left top;
+        background-size: cover;
+        height: 768px;
+    }
+
+    #header-text-box {
+        justify-content: flex-end;
+    }
+
+    #header-text-box h1 {
+        align-items: flex-start;
+        margin: 0 450px 100px 0;
+        padding: 20px 0 20px 40px;
+        background-image: linear-gradient(to right, rgba(0,0,0,.7), rgba(0,0,0,.7));
+        color: #E7E9E8;
+        font-size: 2em;
+        text-align: left;
+    }
+
+    #heidi {
+        margin-bottom: 0;
+        font-size: 1.75em;
+    }
+
+    #portfolio {
+        padding: 0 60px;
+    }
+
+    .portfolio-item {
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+
+    .portfolio-image {
+        margin-right: 43px;
+        width: 525px;
+    }
+
+    .portfolio-image img {
+        width: 325px;
+    }
+
+    .portfolio-description h3 {
+        margin-top: 0;
+    }
+
+    #about {
+        height: 600px;
+    }
+
+    #about-item {
+        flex-direction: row;
+    }
+
+    #portfolio, #about-item {
+        padding: 0 60px;
+    }
+
+    #about-portfolio-image {
+        justify-content: flex-end;
+        flex-basis: 525px;
+    }
+
+    #about-portfolio-image img {
+        width: 302px;
+        height: 302px;
+    }
+
+    #about-description {
+        justify-content: flex-end;
+        /* flex-basis: 350px; */
+        margin-left: 43px;
+    }
+
+    #about-description h3, #about-description h4, #about-description p {
+        text-align: left;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+
+    #header-text-box h1 {
+        margin: 0 950px 50px 0;
+        padding: 50px 0 50px 40px;
+        background-image: linear-gradient(to right, rgba(0,0,0,.7), rgba(0,0,0,.7));
+        color: #E7E9E8;
+        font-size: 2em;
+        text-align: left;
+    }
+
+    #portfolio, #about-item {
+        padding: 0 300px;
+    }
+
+    .portfolio-image img {
+        width: 525px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    #header-text-box p {
+        color: #E7E9E8;
+        margin: 0 0 50px 0;
+        padding: 0 0 50px 40px;
+        font-size: 2em;
+        text-align: left;
 }
