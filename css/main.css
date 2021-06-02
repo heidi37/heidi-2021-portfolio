@@ -403,7 +403,7 @@ header div {
     }
 
     #portfolio, #about-item {
-        padding: 0 300px;
+        padding: 0 100px;
     }
 
     .portfolio-image img {
@@ -419,4 +419,9 @@ header div {
         padding: 0 0 50px 40px;
         font-size: 2em;
         text-align: left;
+    }
+
+    #portfolio, #about-item {
+        padding: 0 200px;
+    }
 }
