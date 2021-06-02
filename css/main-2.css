@@ -9,7 +9,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #332B1E;
-    width: 1366px;
     margin: 0 auto;
     line-height: 1.6875em;
 }  
@@ -22,6 +21,8 @@ h1, h2, h3 {
 h1 {
     font-size: 3em;
     margin: 30px 0;
+    line-height: 1.2em;
+    text-align: center;
 }
 
 h2 {
@@ -59,31 +60,27 @@ h2 + img {
 
 /****** NAV STYLES ******/
 
-nav ul {
+ nav ul {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
     list-style-type: none;
-    height: 65px;
     margin: 0;
-    padding-right: 25px;
+    padding: 0;
     background: hsla(0, 0%, 0%, 0.353);
 }
 
 nav ul li {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     font-family: 'Zilla Slab', serif;
     font-weight: 300;
     font-style: italic;
     font-size: 1.5rem;
-    text-align: right;
-    padding-left: 40px;
+    padding: 10px 0;
 }
 
-nav ul li:nth-of-type(3) {
-    padding-right: 20px;
-}
 
 nav ul li a {
     text-decoration: none;
@@ -95,8 +92,9 @@ nav ul li a {
 header {
     display: flex;
     flex-direction: column;
-    background: url('../img/header-fish-hero-image.png') no-repeat center bottom;
-    height: 768px;
+    background: url('../img/header-fish-hero-image@2x.png') no-repeat top -40px left -650px;
+    background-size: cover;
+    height: 750px;
 }
 
 header div {
@@ -104,6 +102,7 @@ header div {
     flex-direction: column;
     height: 100%;
     margin-top: 0;
+    background: yellow;
 }
 
 #header-text-box {
@@ -112,7 +111,7 @@ header div {
     text-align: center;
 }
 
-#heidi {
+/* #heidi {
     color: #AA1E23;
     font-weight: 500;
 }
@@ -123,11 +122,11 @@ header div {
     font-style: italic;
     font-size: 1.75rem;
     margin: 0 0 30px;
-}
+} */
 
 /****** PORTFOLIO STYLES ******/
 
-#portfolio {
+/* #portfolio {
     padding: 0 137px;
     display: flex;
     flex-direction: column;
@@ -172,11 +171,11 @@ header div {
     background-color: #AA1E23;
     text-decoration: none;
     transition: background-color .5s;
-}
+} */
 
 /****** ABOUT STYLES ******/
 
-#about {
+/* #about {
     background: #7F7460;
     height: 768px;
 }
@@ -222,11 +221,11 @@ header div {
 
 #about-description p {
     color: #E7E9E8;
-}
+} */
 
 /****** FOOTER/CONTACT STYLES ******/
 
-#contact {
+/* #contact {
     display: flex;
     flex-direction: column;
     background: #332B1E;
@@ -266,4 +265,53 @@ header div {
     font-size: .6rem;
     text-align: center;
     color: #E7E9E8;
+}  */
+
+
+/****** DESKTOP ******/
+
+@media (min-width: 550px) {
+    header {
+        background: url('../img/header-fish-hero-image@2x.png') no-repeat top -100px left -100px;
+        background-size: cover;
+        /* height: 750px; */
+    }
+}
+
+@media (min-width: 1075px) {
+    header {
+        background: url('../img/header-fish-hero-image@2x.png') no-repeat top -100px left 0px;
+        background-size: cover;
+        /* height: 750px; */
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        background: url('../img/header-fish-hero-image@2x.png') no-repeat bottom 0px left 0px;
+        background-size: cover;
+        /* height: 750px; */
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 65px;
+        padding-right: 25px;
+    }
+
+    nav ul li:nth-of-type(3) {
+        padding-right: 20px;
+    }
+
+    nav ul li {
+        padding-left: 40px;
+    }
+
+
+
 }
