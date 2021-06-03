@@ -60,6 +60,7 @@ h2 + img {
 
 #about-image img {
     width: 100px;
+    margin-left: 10px;
 }
 
 p {
