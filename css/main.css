@@ -56,11 +56,13 @@ a:hover{
 
 h2 + img {
     width: 75px;
+    display: none;
 }
 
 #about-image img {
     width: 100px;
     margin-left: 10px;
+    display: none;
 }
 
 p {
@@ -107,6 +109,7 @@ header {
     background: url('../img/header-fish-hero-image@2x.jpg') no-repeat right top;
     background-size: cover;
     height: 812px;
+    
 }
 
 header div {
@@ -143,6 +146,7 @@ header div {
     font-size: 1.5em;
     color: #aa1e23;
     margin-bottom: 20px;
+    transition: color 4s;
 }
 
 #tagline {
@@ -229,6 +233,7 @@ header div {
 #about-portfolio-image img {
     width: 200px;
     height: 200px;
+    border-radius: 50%;
 }
 
 #about-description {
@@ -290,13 +295,12 @@ header div {
 }
 
 #social-icons img {
-    width: 50px;
     margin: 10px;
-    border-radius: 50%;
 }
 
 #social-icons img:hover {
-    border: 1px #E7E9E8 solid;
+    transform: rotate(1turn);
+    transition: all 1s ease-in-out;
 }
 
 #copyright, #icon-attribution, #icon-attribution a {
@@ -349,6 +353,10 @@ header div {
     #heidi {
         margin-bottom: 0;
         font-size: 1.75em;
+    }
+
+    h2 + img, #about-image img {
+        display: block;
     }
 
     #portfolio {
