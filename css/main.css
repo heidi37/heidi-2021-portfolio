@@ -138,7 +138,7 @@ header div {
 }
 
 #header-text-box p {
-    margin: 0 0 15px 0;
+    margin: 0 10px 1px 10px;
 }
 
 #heidi {
@@ -153,8 +153,9 @@ header div {
     font-family: 'Zilla Slab', serif;
     font-weight: 300;
     font-style: italic;
-    font-size: 1.75rem;
-    margin: 0 0 30px;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 0px 0 30px;
 }
 
 /****** PORTFOLIO STYLES ******/
@@ -197,7 +198,7 @@ header div {
 .external-sites {
     font-family: 'Zilla Slab', serif;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-decoration: none;
     background: #332B1E;
     color: #ffffff;
@@ -215,7 +216,7 @@ header div {
 
 #about {
     background: #7F7460;
-    height: 812px;
+    padding-bottom: 60px;
 }
 
 #about-item {
@@ -350,6 +351,11 @@ header div {
         width: 500px;
     }
 
+    #tagline {
+        font-size: 1.75rem;
+        line-height: 1.6;
+    }
+
     #heidi {
         margin-bottom: 0;
         font-size: 1.75em;
@@ -357,6 +363,10 @@ header div {
 
     h2 + img, #about-image img {
         display: block;
+    }
+
+    .external-sites {
+        font-size: 1.5em;
     }
 
     #portfolio {
@@ -379,10 +389,6 @@ header div {
 
     .portfolio-description h3 {
         margin-top: 0;
-    }
-
-    #about {
-        height: 600px;
     }
 
     #about-item {
