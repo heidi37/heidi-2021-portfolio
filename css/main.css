@@ -9,7 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #332B1E;
-} 
+}
 
 ul {
     padding: 0;
@@ -109,7 +109,7 @@ header {
     background: url('../img/header-fish-hero-image@2x.jpg') no-repeat right top;
     background-size: cover;
     height: 812px;
-    
+
 }
 
 header div {
@@ -311,6 +311,22 @@ header div {
     margin-top: 60px;
 }
 
+.fa-terminal{
+    animation: terminal-animate 1.5s infinite;
+  }
+
+  @keyframes terminal-animate {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 #icon-attribution, #icon-attribution a {
     margin-bottom: 10px;
 }
@@ -319,7 +335,7 @@ header div {
 /****** MEDIA QUERIES ******/
 
 @media (min-width: 768px) {
-    
+
     h1 {
         font-size: 3em;
         text-align: center;
@@ -474,7 +490,7 @@ header div {
     #header-text-box {
         height: 920px;
     }
-    
+
     #header-text-box h1 {
         margin: 10px 0 40px 0;
     }
